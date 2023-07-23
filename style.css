@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #FF7F00; /* Warna background orange (#FF7F00) */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Menggunakan tinggi 100vh untuk mengisi seluruh viewport */
+    color: black; /* Menjadikan tulisan berwarna hitam */
+}
+
+.background {
+    background-image: url("Image/wallpaper profile.jpg"); /* Ubah dengan URL atau path gambar latar belakang Anda */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile {
+    margin-top: 50px;
+}
+
+.profile img {
+    width: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+.profile h1 {
+    margin-top: 10px;
+    font-size: 24px;
+}
+
+.profile p {
+    font-size: 18px;
+}
+
+.caption {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+}
+
+.social-links {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.social-links a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    text-decoration: none;
+    color: #555;
+}
+
+.social-links img {
+    width: 50px;
+}
+
+.social-links span {
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+/* Media query untuk tampilan di perangkat mobile */
+@media (max-width: 767px) {
+    .caption {
+        height: auto; /* Mengatur ketinggian caption menjadi otomatis (sesuai konten) */
+    }
+}
